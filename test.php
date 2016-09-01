@@ -1,6 +1,6 @@
-<?php
-    phpinfo();
-?>
+ <?php
+   /* phpinfo();*/
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,8 +17,22 @@
     print "안녕이시당 혜선님이시당 10월 15일 생일이시당 숭구리당당 숭당당";
     ?>
     
-    <li>랄</li>
-    <li>라</li>
+    <li>php 버전은 ?
+        <?php
+            print PHP_VERSION;
+        ?>
+    </li>
+    <li>php 운영체제는 ?
+    <?php
+            print PHP_OS;
+        ?>
+    </li>
+    <li><?php
+        define("HELLO","방가방가시다");
+        print HELLO."<br>";
+        
+        print __DIR__;
+        ?></li>
 </ul>    
 </body>
 </html>
